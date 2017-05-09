@@ -1,12 +1,14 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 
 gem 'slim-rails'
 gem 'rails', '~> 5.1.0.rc1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', github: "rails/sass-rails"
+gem 'sass-rails', github: 'rails/sass-rails'
 gem 'dotenv-rails'
 gem 'uglifier', '>= 1.3.0'
+gem 'fog-aws'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'turbolinks', '~> 5'
