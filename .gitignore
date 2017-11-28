@@ -191,6 +191,7 @@ bower.json
 
 # Ignore dotenv settings
 .env
+.envrc.local
 
 # Ignore other unnecessary files
 .DS_Store
