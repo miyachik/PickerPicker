@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 gem 'slim-rails'
-gem 'rails', '~> 5.1.0.rc1'
+gem 'rails', '~> 5.2.0.beta2'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', github: 'rails/sass-rails'
@@ -25,7 +25,7 @@ group :development, :test do
   gem 'rspec-mocks', git: 'https://github.com/rspec/rspec-mocks.git', branch: 'master'
   gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails.git', branch: 'master'
   gem 'rspec-support', git: 'https://github.com/rspec/rspec-support.git', branch: 'master'
-  gem 'rubocop', '0.39.0', require: false
+  gem 'rubocop'
   gem 'listen'
 end
 
