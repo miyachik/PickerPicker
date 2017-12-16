@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 source 'https://rubygems.org'
 
+gem 'aws-sdk-s3'
+gem 'bootsnap'
+gem 'bootstrap-sass'
 gem 'slim-rails'
 gem 'rails', '~> 5.2.0.beta2'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
@@ -9,6 +12,8 @@ gem 'sass-rails', github: 'rails/sass-rails'
 gem 'dotenv-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'fog-aws'
+
+
 # gem 'therubyracer', platforms: :ruby
 
 gem 'turbolinks', '~> 5'
@@ -16,7 +21,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry-rails'
   gem 'pry-byebug'

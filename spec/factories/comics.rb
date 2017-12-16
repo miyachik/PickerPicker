@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :comic do
     title "MyString"
     image_url "MyString"

@@ -1,0 +1,17 @@
+h1 index(show random comics)
+
+- @comics.each do |comic|
+  - if comic.image_url.attached?
+    = link_to(image_tag(url_for(comic.image_url)), comic_path(comic))
+
+ul
+  li
+    = button_to '喜', 'comics/happy', class:"btn-lg btn-primary"
+  li
+    = button_to '怒', 'comics/angry', class:"btn-lg btn-danger"
+  li
+    = button_to '哀', 'comics/sad', class:"btn-lg btn-info"
+  li
+    = button_to '楽', 'comics/excite', class:"btn-lg btn-warning"
+
+= button_to 'STORY', '/stories', class:"btn btn-link"

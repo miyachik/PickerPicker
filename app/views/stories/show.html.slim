@@ -1,0 +1,7 @@
+h1 Show
+
+h2 = "Story:#{@story.story_num}話"
+- if @story.image_url.attached?
+  = image_tag url_for(@story.image_url)
+
+= button_to 'TOP', '/comics', class:"btn btn-link"

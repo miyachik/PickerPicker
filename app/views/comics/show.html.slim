@@ -1,0 +1,15 @@
+h1 Show
+
+h2 = "Story:#{@comic.story.story_num}話"
+h3 = "分類: #{@comic.emotion_type || "未"}"
+h3 = "進捗バー: #{@unlabeled_cnt} / #{@all_cnt}"
+- if @comic.image_url.attached?
+  = link_to(image_tag(url_for(@comic.image_url)), story_path(@comic.story.story_num))
+span
+  = button_to '喜', comic_path(emotion_type:1), method: :patch, class:"btn-lg btn-primary"
+  = button_to '怒', comic_path(emotion_type:2), method: :patch, class:"btn-lg btn-danger"
+  = button_to '哀', comic_path(emotion_type:3), method: :patch, class:"btn-lg btn-info"
+  = button_to '楽', comic_path(emotion_type:4), method: :patch, class:"btn-lg btn-warning"
+
+= button_to 'TOP', '/', class:"btn btn-link"
+

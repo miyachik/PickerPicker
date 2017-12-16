@@ -1,0 +1,7 @@
+h1 index(show random comics)
+
+- @stories.each do |story|
+  - if story.image_url.attached?
+    = link_to(image_tag(url_for(story.image_url)), story_path(story))
+
+= button_to 'TOP', '/comics', class:"btn btn-link"

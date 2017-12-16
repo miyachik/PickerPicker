@@ -1,0 +1,5 @@
+h1 楽
+
+- @comics.each do |comic|
+  - if comic.image_url.attached?
+    = image_tag url_for(comic.image_url)
