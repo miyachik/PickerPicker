@@ -2,7 +2,7 @@ require 'base64'
 require 'json'
 require 'net/https'
 
-IMAGE_FILE = './sample.jpg'
+IMAGE_FILE = './sample.png'
 
 API_KEY = ENV['VISON_API_KEY']
 API_URL = "https://vision.googleapis.com/v1/images:annotate?key=#{API_KEY}"

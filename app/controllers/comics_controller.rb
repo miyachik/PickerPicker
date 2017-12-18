@@ -18,7 +18,6 @@ class ComicsController < ApplicationController
   end
 
   def happy
-    binding.pry
     @comics = Comic.where(emotion_type:"happy").shuffle[0..9]
   end
 

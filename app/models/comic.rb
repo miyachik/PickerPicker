@@ -8,6 +8,6 @@ class Comic < ActiveRecord::Base
     happy: 0,
     angry: 1,
     sad: 2,
-    excite: 4,
+    excite: 3,
   }
 end

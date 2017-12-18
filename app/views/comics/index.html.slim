@@ -6,12 +6,12 @@ h1 index(show random comics)
 
 ul
   li
-    = button_to '喜', 'comics/happy', class:"btn-lg btn-primary"
+    = button_to '喜', 'comics/happy', class:"btn-lg btn-primary",method: :get
   li
-    = button_to '怒', 'comics/angry', class:"btn-lg btn-danger"
+    = button_to '怒', 'comics/angry', class:"btn-lg btn-danger",method: :get
   li
-    = button_to '哀', 'comics/sad', class:"btn-lg btn-info"
+    = button_to '哀', 'comics/sad', class:"btn-lg btn-info",method: :get
   li
-    = button_to '楽', 'comics/excite', class:"btn-lg btn-warning"
+    = button_to '楽', 'comics/excite', class:"btn-lg btn-warning",method: :get
 
 = button_to 'STORY', '/stories', class:"btn btn-link"
