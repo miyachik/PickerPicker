@@ -11,5 +11,5 @@ span
   = button_to '哀', comic_path(emotion_type:2), method: :patch, class:"btn-lg btn-info"
   = button_to '楽', comic_path(emotion_type:3), method: :patch, class:"btn-lg btn-warning"
 
-= button_to 'TOP', '/', class:"btn btn-link"
+= button_to 'TOP', root_path, class:"btn btn-link" , method: :get
 
